@@ -4,12 +4,12 @@
 }
 
 
-.single-product__section .wrapper {
+.single__section .wrapper {
     max-width: 860px;
     margin: 0 auto;
 }
 
-.single-product-content {
+.single-content {
     margin-top: 30px;
 }
 
@@ -35,7 +35,7 @@
     line-height: 1;
 }
 
-.product-address {
+.single-address {
     margin-top: 30px;
     font-size: 16px;
     color: #333333;
