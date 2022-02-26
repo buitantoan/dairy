@@ -29,6 +29,17 @@
 
         swiper_slider_func(swiper_hero, swiper_herro_data);
 
+
+        $('.button-menu-toggle').on('click', function (e) {
+           $(this).toggleClass('icon-expanded'); 
+           $('#menu-mobile').toggleClass('nav-expanded'); 
+        });
+
+        $('#menu-mobile .menu-item-has-children').on('click', '.dropdown-toggle',function (e) {
+            $(this).toggleClass('icon-up')
+            $(this).next('.dropdown-menu').slideToggle('swing');
+        });
+
     });
 
 

@@ -32,20 +32,90 @@
                         <img src="./assets/images/logo.png" alt="PJR MILK" srcset="">
                     </a>
                 </div>
-                <nav class="menu-desktop__main" role="navigation">
-                    <ul id="menu-main-menu" class="nav navbar-nav">
+                <nav id="menu-main" class="menu-desktop__main" role="navigation">
+                    <ul class="nav navbar-nav">
                         <li class="menu-item current-menu-item">
-                            <a href="#">Home</a>
+                            <a href="#">Về chúng tôi</a>
                         </li>
                         <li class="menu-item menu-item-has-children">
                             <a href="#" class="dropdown-toggle">
-                                Porduct
+                                <span class="menu-text">Khoa Học Dinh Dưỡng</span>
                                 <span class="menu-icon">
                                     <i class="fa fa-chevron-down" aria-hidden="true"></i>
                                 </span>
                             </a>
                             <div class="dropdown-menu">
-                                <ul role="menu" class="nav menu-has-parent">
+                                <ul role="menu" class="nav sub-menu">
+                                    <li class="menu-item "><a  href="#">Chuyên gia tư vấn</a></li>
+                                    <li class="menu-item "><a  href="#">Người lớn và người cao tuổi</a></li>
+                                    <li class="menu-item "><a  href="#">Trẻ em</a></li>
+                                    <li class="menu-item "><a  href="#">Dinh dưỡng y học</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#" class="dropdown-toggle">
+                                <span class="menu-text">Sản Phẩm</span>
+                                <span class="menu-icon">
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                </span>
+                            </a>
+                            <div class="dropdown-menu">
+                                <ul role="menu" class="nav sub-menu">
+                                    <li class="menu-item "><a  href="#">STAGE 1</a></li>
+                                    <li class="menu-item "><a  href="#">STAGE 2</a></li>
+                                    <li class="menu-item "><a  href="#">STAGE 3</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="menu-item">
+                            <a href="#">Hệ thống phân phối</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Bài Viết</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Liên Hệ</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="button-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+                    <span class="button-menu-icon">
+                        <i class="fa fa-bars menu" aria-hidden="true"></i>
+                        <i class="fa fa-times closed" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <nav id="menu-mobile" class="menu-mobile__main">
+                    <ul class="nav menu">
+                        <li class="menu-item current-menu-item">
+                            <a href="#">Về chúng tôi</a>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#" class="dropdown-toggle">
+                                <span class="menu-text">Khoa Học Dinh Dưỡng</span>
+                                <span class="menu-icon">
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                </span>
+                            </a>
+                            <div class="dropdown-menu">
+                                <ul role="menu" class="nav sub-menu">
+                                    <li class="menu-item "><a  href="#">Chuyên gia tư vấn</a></li>
+                                    <li class="menu-item "><a  href="#">Người lớn và người cao tuổi</a></li>
+                                    <li class="menu-item "><a  href="#">Trẻ em</a></li>
+                                    <li class="menu-item "><a  href="#">Dinh dưỡng y học</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#" class="dropdown-toggle">
+                                <span class="menu-text">Sản Phẩm</span>
+                                <span class="menu-icon">
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                </span>
+                            </a>
+                            <div class="dropdown-menu">
+                                <ul role="menu" class="nav sub-menu">
                                     <li class="menu-item "><a  href="#">STAGE 1</a></li>
                                     <li class="menu-item "><a  href="#">STAGE 2</a></li>
                                     <li class="menu-item "><a  href="#">STAGE 3</a></li>
@@ -54,25 +124,23 @@
                                 </ul>
                             </div>
                         </li>
+
                         <li class="menu-item">
-                            <a href="#">News</a>
+                            <a href="#">Hệ thống phân phối</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#">About Us</a>
+                            <a href="#">Bài Viết</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#">Contact Us</a>
+                            <a href="#">Liên Hệ</a>
                         </li>
                     </ul>
-                </nav>
-                <nav id="menu-mobile" class="menu-mobile__main">
-
                 </nav>
             </div>
         </div>
     </header>
     <div id="site-content">
-        <section class="hero__section fixed-margin-top">
+        <section id="hero-section" class="hero__section fixed-margin-top">
             <div class="container">
                 <div class="d-hero-swiper swiper">
                     <div class="swiper-wrapper">
@@ -82,9 +150,11 @@
                                     <img src="./assets/images/homepage_slider1.jpg" alt="">
                                 </a>
                                 <div class="slide__inner-content">
-                                    <h3 class="slide__inner-heading">
-                                        This is my heading 01
-                                    </h3>
+                                    <div class="slide__inner-content-text">
+                                        <h3 class="slide__inner-heading">
+                                            This is my heading 01
+                                        </h3>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -108,9 +178,11 @@
                                     <img src="./assets/images/homepage_slider1.jpg" alt="">
                                 </a>
                                 <div class="slide__inner-content">
-                                    <h3 class="slide__inner-heading">
-                                        This is my heading 03
-                                    </h3>
+                                    <div class="slide__inner-content-text">
+                                        <h3 class="slide__inner-heading">
+                                            This is my heading 03
+                                        </h3>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -126,7 +198,7 @@
             </div>
         </section>
 
-        <section class="about__section padding__ss">
+        <section id="about" class="about__section padding__ss">
             <div class="container">
                 <div class="wrapper">
                     <hgroup>
@@ -138,7 +210,7 @@
                         </div>
                     </hgroup>
                     <div class="col-container about-wrapper">
-                        <div class="col col-33"> 
+                        <div class="col-lg-25 col-md-50 col-mb"> 
                             <div class="image-box-wrapper">
                                 <figure class="image-box-img">
                                     <a href="#">
@@ -155,7 +227,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col col-33"> 
+                        <div class="col-lg-25 col-md-50 col-mb"> 
                             <div class="image-box-wrapper">
                                 <figure class="image-box-img">
                                     <a href="#">
@@ -172,7 +244,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col col-33"> 
+                        <div class="col-lg-25 col-md-50 col-mb"> 
                             <div class="image-box-wrapper">
                                 <figure class="image-box-img">
                                     <a href="#">
@@ -189,41 +261,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col col-33"> 
-                            <div class="image-box-wrapper">
-                                <figure class="image-box-img">
-                                    <a href="#">
-                                        <img src="./assets/images/trophy.png" alt="PJR">
-                                    </a>
-                                </figure>
-                                <div class="image-box-content">
-                                    <h3 class="image-box-title">
-                                        <a href="#">Sứ Mệnh Tầm Nhìn</a>
-                                    </h3>
-                                    <p class="image-box-description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col col-33"> 
-                            <div class="image-box-wrapper">
-                                <figure class="image-box-img">
-                                    <a href="#">
-                                        <img src="./assets/images/trophy.png" alt="PJR">
-                                    </a>
-                                </figure>
-                                <div class="image-box-content">
-                                    <h3 class="image-box-title">
-                                        <a href="#">Sứ Mệnh Tầm Nhìn</a>
-                                    </h3>
-                                    <p class="image-box-description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col col-33"> 
+                        <div class="col-lg-25 col-md-50 col-mb"> 
                             <div class="image-box-wrapper">
                                 <figure class="image-box-img">
                                     <a href="#">
@@ -245,7 +283,7 @@
             </div>
         </section>
 
-        <section class="nutrition-science__section padding__ss">
+        <section id="nutrition" class="nutrition-science__section padding__ss">
             <div class="container">
                 <div class="wrapper">
                     <hgroup>
@@ -412,7 +450,7 @@
             </div>
         </section>
 
-        <section class="products__section padding__ss">
+        <section id="products" class="products__section padding__ss">
             <div class="container">
                 <div class="wrapper">
                     <hgroup>
@@ -579,7 +617,7 @@
             </div>
         </section>
 
-        <section class="systems__section padding__ss">
+        <section id="systems" class="systems__section padding__ss">
             <div class="container">
                 <div class="wrapper">
                     <hgroup>
@@ -589,7 +627,7 @@
                         </div>
                     </hgroup>
                     <div class="systems col-container">
-                        <div class="col col-33">
+                        <div class="col-mb col-md-33 col-lg-33">
                             <div class="system__wrap">
                                 <div class="post__wrap-thumbnail">
                                     <a href="#">
@@ -610,7 +648,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col col-33">
+                        <div class="col-mb col-md-33 col-lg-33">
                             <div class="system__wrap">
                                 <div class="post__wrap-thumbnail">
                                     <a href="#">
@@ -631,7 +669,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col col-33">
+                        <div class="col-mb col-md-33 col-lg-33">
                             <div class="system__wrap">
                                 <div class="post__wrap-thumbnail">
                                     <a href="#">
@@ -657,11 +695,11 @@
             </div>
         </section>
 
-        <section class="posts__section padding__ss">
+        <section id="posts" class="posts__section padding__ss">
             <div class="container">
                 <div class="wrapper">
                     <hgroup>
-                        <h2 class="heading">Bài Viết</h2>
+                        <h2 class="heading">Some Text</h2>
                         <div class="description">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                         </div>
@@ -824,9 +862,40 @@
             </div>
         </section>
 
+        <section id="contact" class="contact__section padding__ss">
+            <div class="container">
+                <div class="wrapper">
+                    <hgroup>
+                        <h2 class="heading">Liên Hệ</h2>
+                        <div class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                        </div>
+                    </hgroup>
+                    <div class="contact-box">
+                        <p class="address">Địa chỉ</p>
+                        <a href="mailto:toanbuitan@gmail.com">toanbuitan@gmail.com</a>
+                        <a href="tel:0378056827">0378056827</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </div>
     <footer class="footer">
         <div class="container">
+            <div class="footer-top">
+                <div class="site-logo">
+                    <a href="/" class="custom-logo-link" rel="home">
+                        <img src="./assets/images/logo.png" alt="PJR MILK" srcset="">
+                    </a>
+                </div>
+                <hgroup>
+                    <h2 class="heading">Bài Viết</h2>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    </div>
+                </hgroup>
+            </div>
             <div class="footer-widget-wrapper">
                 <div class="footer-widget-item">
                     <div class="widget-links">
@@ -901,22 +970,7 @@
             </div>
             <div class="footer-bottom">
                 <div class="footer-copyright flex-left">
-                    <div class="copyright-box">2016 <a href="/">OZCare®</a>, All rights reserved</div>
-                </div>
-                <div class="footer-copyright flex-middle">
-                    <h4>SHARE US ON:</h4>
-                    <ul class="footer-links list-inline socials">
-                        <li class="footer-link-item social-item">
-                            <a class="social-icon" href="#" target="_blank">
-                                <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li class="footer-link-item social-item">
-                            <a class="social-icon" href="#" target="_blank">
-                                <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="copyright-box">Copyright © PJR 2022. All rights reserved</div>
                 </div>
                 <div class="footer-copyright flex-right">
                     <ul class="footer-links list-inline">

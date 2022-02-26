@@ -1,0 +1,42 @@
+.single ul,
+.single ol {
+    padding-left: 30px;
+}
+
+
+.single-product__section .wrapper {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.single-product-content {
+    margin-top: 30px;
+}
+
+.categories {
+    margin-top: 30px;
+}
+
+.categories li {
+    margin-bottom: 5px;
+}
+
+.categories h4 {
+    font-size: 20px;
+    line-height: 1.3em;
+    font-weight: 600;
+}
+
+.categories a {
+    font-size: 16px;
+    color: #333333;
+    font-weight: 500;
+    font-family: var(--font-family);
+    line-height: 1;
+}
+
+.product-address {
+    margin-top: 30px;
+    font-size: 16px;
+    color: #333333;
+}

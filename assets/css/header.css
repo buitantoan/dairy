@@ -27,6 +27,7 @@
 .site-logo img{
     width: 100px;
     height: auto;
+    object-fit: cover;
     mix-blend-mode: hard-light;
 }
 
@@ -38,6 +39,10 @@
     list-style: none;
     display: flex;
     justify-content: flex-end;
+}
+
+body ul.nav{
+    padding-left: 0;
 }
 
 .nav li{
@@ -70,8 +75,8 @@
 .nav li .dropdown-menu a{
     color: #685e59;
     line-height: 21px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .nav li .dropdown-menu a:hover{
@@ -102,4 +107,113 @@
 .menu-item-has-children:hover .dropdown-menu{
     visibility: visible;
     opacity: 1;
+}
+
+/* Menu mobile */
+
+.button-menu-toggle{
+    display: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.button-menu-toggle .menu{
+    display: block;
+}
+
+.button-menu-toggle .closed{
+    display: none;
+}
+
+.button-menu-toggle.icon-expanded .menu{
+    display: none;
+}
+
+.button-menu-toggle.icon-expanded .closed{
+    display: block;
+}
+
+.menu-mobile__main{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    right: calc(-100%);
+    top: 0;
+    bottom: 0;
+    background: #FFFFFF;
+    transition: 0.5s;
+    padding: 90px 0 0;
+    overflow-y: auto;
+}
+
+.menu-mobile__main.nav-expanded {
+    right: 0 ;
+}
+
+.menu-mobile__main .menu{
+    padding-bottom: 30px;
+}
+
+.menu-mobile__main .menu>.menu-item{
+    display: block;
+    box-shadow: inset 0px 1px 1px rgb(0 0 0 / 10%);
+    width: 100%;
+}
+.menu-mobile__main .menu>.menu-item:last-child{
+    box-shadow: 0px 1px 1px #e6e6e6, inset 0px 1px 1px rgb(0 0 0 / 10%);
+}
+
+.menu-mobile__main .menu li a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-mobile__main .dropdown-menu{
+    position: inherit;
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+    -webkit-box-shadow: inset 0px 1px 1px rgb(0 0 0 / 10%);
+    box-shadow: inset 0px 1px 1px rgb(0 0 0 / 10%);
+    background-color: #fafafa;
+    display: none;
+    transition: all 0.3s;
+}
+
+.menu-mobile__main .nav li .dropdown-menu a{
+    font-size: 13px;
+}
+
+.icon-up .menu-icon{
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 1024.98px){
+    .header{
+        background-color: #FFFFFF;
+    }
+    .header-wrapper{
+        justify-content: space-between;
+    }
+
+    .menu-desktop__main{
+        display: none;
+    }
+
+    .button-menu-toggle{
+        display: block;
+        font-size: 28px;
+    }
+
+}
+
+@media screen and (max-width: 767.98px){
+
+}
+
+@media screen and (max-width: 480px){
+
+
 }
