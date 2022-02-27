@@ -3,6 +3,10 @@
     padding-left: 30px;
 }
 
+.single .footer-links ul{
+    padding: 0;
+}
+
 
 .single__section .wrapper {
     max-width: 860px;
