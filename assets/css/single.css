@@ -40,3 +40,27 @@
     font-size: 16px;
     color: #333333;
 }
+
+.detail{
+    padding-top: 30px;
+    border-top: 1px solid #00000020;
+}
+
+.single-content figure{
+    text-align: center;
+}
+
+.single-content h2,
+.single-content h3,
+.single-content h4,
+.single-content h5,
+.single-content h6{
+    line-height: 1.5em;
+}
+
+.single-content p{
+    font-size: 14px;
+    line-height: 1.6em;
+    color: #333333;
+}
+

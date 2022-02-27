@@ -221,6 +221,7 @@
 }
 
 .contact-box a{
+    margin: 4px;
     display: inline-block;
     font-size: 18px;
     font-weight: 500;

@@ -22,7 +22,12 @@ body{
     padding-top: 90px;
 }
 
+figure{
+    margin-bottom: 16px;
+}
+
 p,h1,h2,h3,h4,h5,h6{
+    color: #222222;
     font-family: "Open Sans", sans-serif;
     margin-bottom: 16px;
 }
@@ -141,9 +146,7 @@ hgroup{
 
 
 @media screen and (min-width: 1200px){
-    .container{
-        width: 1170px;
-    }
+
 
 }
 
