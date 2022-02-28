@@ -41,21 +41,21 @@
         });
 
 
-        $(".nav .menu-item").on('click', function(event) {
+        // $(".nav .menu-item").on('click', function(event) {
 
-            if (this.hash !== "") {
-                event.preventDefault();
-                var hash = this.hash;
-                var headerHeight = $('.header').outerHeight();
+        //     if (this.hash !== "") {
+        //         event.preventDefault();
+        //         var hash = this.hash;
+        //         var headerHeight = $('.header').outerHeight();
                 
-                if($(hash).length){
-                    $('html, body').animate({
-                        scrollTop: parseInt($(hash).offset().top) - headerHeight
-                    }, 600);
-                }
+        //         if($(hash).length){
+        //             $('html, body').animate({
+        //                 scrollTop: parseInt($(hash).offset().top) - headerHeight
+        //             }, 600);
+        //         }
  
-            }
-        });
+        //     }
+        // });
 
     });
 
