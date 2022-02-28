@@ -58,15 +58,19 @@
 }
 
 .footer-bottom{
-    padding: 16px 0;
+    padding: 10px 0;
     background-color: #8dc73f;
+
+}
+
+.footer-bottom .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .footer-copyright{
-    padding: 0 15px;
+    padding: 10px 15px;
 }
 
 .footer-copyright .copyright-box{
@@ -109,7 +113,7 @@
 
 
 @media screen and (max-width: 767.98px){
-    .footer-bottom{
+    .footer-bottom .container{
         flex-direction: column;
     }
 }
