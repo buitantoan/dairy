@@ -22,6 +22,7 @@
     line-height: 0;
     width: 100%;
     position: relative;
+    transition: all 0.3s;
 }
 
 .post__wrap-featured{
@@ -42,6 +43,11 @@
     right: 0;
     bottom: 0;
     max-height: 500px; 
+    transition: all 0.3s;
+}
+
+.post__wrap-thumbnail:hover img{
+    transform: scale(1.1);
 }
 
 .post__wrap-content{
