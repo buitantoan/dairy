@@ -57,7 +57,7 @@ body ul.nav{
     padding: 12px 16px;
     font-weight: 500;
     font-size: 14px;
-    line-height: 21px;
+    line-height: 24px;
     color: #685e59;
     font-family: "Open Sans";
     text-transform: capitalize;
@@ -70,13 +70,6 @@ body ul.nav{
 
 .nav .current-menu-item a{
     color: #d77d31;
-}
-
-.nav li .dropdown-menu a{
-    color: #685e59;
-    line-height: 21px;
-    padding-top: 8px;
-    padding-bottom: 8px;
 }
 
 .nav li .dropdown-menu a:hover{
@@ -92,7 +85,7 @@ body ul.nav{
     top: 50px;
     left: 0;
     min-width: 160px;
-    padding: 5px 0;
+    padding: 10px 0;
     text-align: left;
     background-color: rgba(255,255,255,0.97);
     border-radius: 4px;
@@ -102,6 +95,13 @@ body ul.nav{
     opacity: 0;
     transition: all 0.3s;
     z-index: 999;
+}
+
+.nav li .dropdown-menu a{
+    color: #685e59;
+    line-height: 24px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .menu-item-has-children:hover .dropdown-menu{
@@ -184,6 +184,12 @@ body ul.nav{
 
 .menu-mobile__main .nav li .dropdown-menu a{
     font-size: 13px;
+}
+
+.menu-mobile__main .dropdown-toggle .menu-icon{
+    width: 30px;
+    height: auto;
+    text-align: center;
 }
 
 .icon-up .menu-icon{

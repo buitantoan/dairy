@@ -30,6 +30,7 @@ p,h1,h2,h3,h4,h5,h6{
     color: #222222;
     font-family: "Open Sans", sans-serif;
     margin-bottom: 16px;
+    line-height: 1.55em;
 }
 
 a{
@@ -58,6 +59,11 @@ section{
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.block-layout{
+    max-width: 860px;
+    margin: 0 auto;
 }
 
 /* column */
@@ -215,6 +221,14 @@ hgroup{
     
     .col-mb-25{
         width: 25%;
+    }
+
+    .heading{
+        font-size: 30px;
+    }
+
+    .description{
+        font-size: 14px;
     }
 
 }

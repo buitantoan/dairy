@@ -35,9 +35,9 @@
            $('#menu-mobile').toggleClass('nav-expanded'); 
         });
 
-        $('#menu-mobile .menu-item-has-children').on('click', '.dropdown-toggle',function (e) {
-            $(this).toggleClass('icon-up')
-            $(this).next('.dropdown-menu').slideToggle('swing');
+        $('#menu-mobile .menu-item-has-children').on('click', '.dropdown-toggle .menu-icon',function (e) {
+            $(this).parent().toggleClass('icon-up');
+            $(this).parent().next('.dropdown-menu').slideToggle('swing');
         });
 
 
