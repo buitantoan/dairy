@@ -42,7 +42,6 @@
     left: 0;
     right: 0;
     bottom: 0;
-    max-height: 500px; 
     transition: all 0.3s;
 }
 
@@ -56,7 +55,7 @@
 
 .post__wrap-title{
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
     font-family: var(--font-family);
     line-height: 1.4em;
     color: #222222;
@@ -76,6 +75,31 @@
     -webkit-box-orient: vertical;
     margin-bottom: 0;
 }
+
+.featured-post__wrap{
+    display: flex;
+}
+
+.featured-post__wrap .post__wrap-thumbnail{
+    width: 50%;
+    margin-right: 15px;
+}
+
+.featured-post__wrap .post__wrap-content{
+    width: 50%;
+    padding-top: 0;
+    margin-left: 15px;
+}
+
+.featured-post__wrap .post__wrap-title{
+    font-size: 30px;
+}
+
+.featured-post__wrap .post__wrap-excerpt{
+    font-size: 18px;
+    -webkit-line-clamp: 3;
+}
+
 
 /* Hero swiper */
 
@@ -253,6 +277,29 @@
 }
 
 @media screen and (max-width: 767.98px){
+
+    .featured-post__wrap{
+        flex-direction: column;
+    }
+
+    .featured-post__wrap .post__wrap-thumbnail{
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    .featured-post__wrap .post__wrap-content{
+        width: 100%;
+        padding-top: 30px;
+        margin-left: 0;
+    }
+
+    .featured-post__wrap .post__wrap-title{
+        font-size: 24px;
+    }
+
+    .featured-post__wrap .post__wrap-excerpt{
+        font-size: 16px;
+    }
 
     .swiper .swiper-button{
         font-size: 24px;
