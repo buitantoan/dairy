@@ -58,6 +58,11 @@
     line-height: 1.5em;
     color: #5e5e5e;
     text-transform: capitalize;
+    transition: all 0.3s;
+}
+
+.footer-link-item a:hover{
+    color: #d77d31;
 }
 
 .footer-link-item p{
