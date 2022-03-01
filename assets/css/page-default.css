@@ -44,8 +44,10 @@
 }
 
 .detail{
-    padding-top: 30px;
-    border-top: 1px solid #00000020;
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 8px;
+    background: #FFFFFF;
 }
 
 .page-default-content figure{
@@ -53,3 +55,14 @@
 }
 
 
+@media screen and (max-width: 1024.98px){
+    .detail{
+        padding: 30px 20px;
+    }
+}
+
+@media screen and (max-width: 767.98px){
+    .detail{
+        padding: 25px 15px;
+    }
+}
