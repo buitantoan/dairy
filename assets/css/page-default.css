@@ -1,3 +1,7 @@
+.page-default{
+    background: #F3F3F3;
+}
+
 .page-default ul,
 .page-default ol {
     padding-left: 30px;

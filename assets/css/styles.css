@@ -26,8 +26,15 @@ figure{
     margin-bottom: 16px;
 }
 
-p,h1,h2,h3,h4,h5,h6{
-    color: #222222;
+h1,h2,h3,h4,h5,h6{
+    color: #4a5157;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 16px;
+    line-height: 1.55em;
+}
+
+p{
+    color: #5e5e5e;
     font-family: "Open Sans", sans-serif;
     margin-bottom: 16px;
     line-height: 1.55em;
@@ -62,7 +69,7 @@ section{
 }
 
 .block-layout{
-    max-width: 860px;
+    max-width: 960px;
     margin: 0 auto;
 }
 
