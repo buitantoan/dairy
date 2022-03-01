@@ -113,7 +113,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 60%;
+    padding-bottom: 36%;
 }
 
 .slide__inner-thumbnail::before{
@@ -309,6 +309,10 @@
         bottom: 8px;
     }
 
+    .d-hero-swiper .slide__inner .slide__inner-thumbnail{
+        padding-bottom: 42%;
+    }
+
     .d-hero-swiper .slide__inner .slide__inner-heading{
         font-size: 25px;
     }
@@ -325,6 +329,10 @@
 }
 
 @media screen and (max-width: 480px){
+
+    .d-hero-swiper .slide__inner .slide__inner-thumbnail{
+        padding-bottom: 50%;
+    }
 
     .d-hero-swiper .slide__inner .slide__inner-heading{
         font-size: 20px;
