@@ -82,10 +82,10 @@
 
 .featured-post__wrap{
     display: flex;
-    margin: 0 10px;
     padding: 20px;
     border-radius: 8px;
     background: #FFFFFF;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
 }
 
 .featured-post__wrap .post__wrap-thumbnail{
