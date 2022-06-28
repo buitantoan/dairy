@@ -93,7 +93,6 @@ body ul.nav{
     box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
     visibility: hidden;
     opacity: 0;
-    transition: all 0.3s;
     z-index: 999;
 }
 
@@ -179,7 +178,6 @@ body ul.nav{
     box-shadow: inset 0px 1px 1px rgb(0 0 0 / 10%);
     background-color: #fafafa;
     display: none;
-    transition: all 0.3s;
 }
 
 .menu-mobile__main .nav li .dropdown-menu a{
