@@ -28,7 +28,6 @@
     width: 100px;
     height: auto;
     object-fit: cover;
-    mix-blend-mode: hard-light;
 }
 
 .menu-desktop__main{

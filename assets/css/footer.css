@@ -2,16 +2,12 @@
 
 .footer{
     padding: 30px 0 0;
-    background-color: #EFECEA;
+    background-color: #FFFFFF;
 }
 
 .footer-top .site-logo{
     text-align: center;
     margin-bottom: 12px;
-}
-
-.footer-top .site-logo img{
-    mix-blend-mode: color-burn;
 }
 
 .widget-heading{
