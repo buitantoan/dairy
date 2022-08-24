@@ -253,6 +253,36 @@
 .system__wrap{
     margin: 15px;
     text-align: center;
+    position: relative;
+}
+
+.system__wrap .post__wrap-featured{
+    overflow: hidden;
+    display: block;
+    line-height: 0;
+    width: 100%;
+    position: relative;
+    transition: all 0.3s;
+}
+.system__wrap .post__wrap-content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.3);
+}
+
+.system__wrap .post__wrap-title{
+    margin: 0;
+    font-size: 24px;
+    color: #Fefefe;
+    text-transform: uppercase;
+    text-shadow: 0 2px 5px rgb(0 0 0 / 25%);
 }
 
 /* Contact */
