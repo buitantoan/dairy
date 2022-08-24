@@ -282,12 +282,17 @@
 }
 
 .contact-box a{
-    margin: 4px;
+    margin: 5px;
     display: inline-block;
     font-size: 18px;
     font-weight: 500;
     color: #FFFFFF;
-    list-style: 1;
+    line-height: 1;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
 }
 
 

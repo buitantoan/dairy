@@ -71,22 +71,16 @@
 
 }
 
-.footer-bottom .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .footer-copyright{
     padding: 10px 15px;
 }
 
 .footer-copyright .copyright-box{
-    font-weight: 400;
+    font-weight: 500;
     color: #FFFFFF;
     font-size: 14px;
     line-height: 1;
-    font-family: "Open Sans";
+    text-align: center;
 }
 
 .footer-copyright h4{

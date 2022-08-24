@@ -13,7 +13,7 @@ body{
 }
 
 body{
-    font-family: "Open Sans", sans-serif;
+    font-family: "Nutricare Pro Bold", sans-serif;
     font-size: 14px;
     font-weight: 400;
 }
@@ -29,20 +29,20 @@ figure{
 
 h1,h2,h3,h4,h5,h6{
     color: #4a5157;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Nutricare Pro Bold", sans-serif;
     margin-bottom: 16px;
     line-height: 1.55em;
 }
 
 p{
     color: #5e5e5e;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Nutricare Pro Bold", sans-serif;
     margin-bottom: 16px;
     line-height: 1.55em;
 }
 
 a{
-    font-family: "Open Sans", sans-serif;
+    font-family: "Nutricare Pro Bold", sans-serif;
     text-decoration: none;
     color: inherit;
     font-size: inherit;
@@ -134,9 +134,9 @@ section{
 
 .heading{
     font-size: 32px;
-    color: #4a5157;
-    font-family: "Open Sans";
-    font-weight: 600;
+    color: #034ea2;
+    font-family: "Nutricare Pro Bold";
+    font-weight: 800;
     line-height: 1.5;
     text-transform: uppercase;
     text-align: center;
