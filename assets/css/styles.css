@@ -18,6 +18,13 @@ body{
     font-weight: 400;
 }
 
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 .layout-content{
     padding-top: 90px;
 }
@@ -112,9 +119,6 @@ section{
 
 .breadcrumbs-box{
     position: relative;
-    max-width: 840px;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
     z-index: 2;
 }
@@ -147,22 +151,13 @@ section{
     background-color: #8dc63f;
 }
 
-.container{
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-.block-layout{
-    max-width: 1130px;
-    margin: 0 auto;
-}
-
 .flex-box{
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    width: calc(100% + 20px);
+    margin-left: -10px;
+    margin-right: -10px;
 }
 .flex-item{
     width: calc(25% - 20px);
@@ -184,36 +179,50 @@ ol {
     padding: 0;
 }
 
-.page-default-content {
+.content {
     margin-top: 30px;
 }
 
 .categories {
-    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
-.categories li {
-    margin-bottom: 5px;
-}
-
-.categories h4 {
-    font-size: 20px;
-    line-height: 1.3em;
+.categories .category-label{
+    font-size: 24px;
+    line-height: 1.5;
     font-weight: 600;
+    margin-bottom: 20px;
+}
+.categories .list-category{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.categories a {
-    font-size: 16px;
-    color: #333333;
-    font-weight: 500;
-    font-family: var(--font-family);
-    line-height: 1;
+.categories .list-category .category-item {
+    margin: 5px;
 }
 
-.single-address {
-    margin-top: 30px;
+.list-category .category-item a{
+    display: inline-block;
     font-size: 16px;
-    color: #333333;
+    line-height: 1.5;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    background-color: #159DD9;
+    text-transform: capitalize;
+    transition: all 0.3s;
+}
+.list-category .category-item a:hover{
+    background-color: #034ea2;
+}
+
+.featured-image{
+    text-align: center;
 }
 
 .detail{
@@ -223,7 +232,7 @@ ol {
     background: #FFFFFF;
 }
 
-.page-default-content figure{
+.content figure{
     text-align: center;
 }
 
@@ -315,7 +324,6 @@ ol {
 @media screen and (max-width: 480px){
     .flex-item{
         width: 100%;
-        margin: 15px 0;
     }
 }
 
