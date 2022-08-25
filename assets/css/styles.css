@@ -23,7 +23,7 @@ body{
 }
 
 figure{
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     line-height: 0;
 }
 
@@ -35,10 +35,11 @@ h1,h2,h3,h4,h5,h6{
 }
 
 p{
+    font-size: 16px;
     color: #5e5e5e;
     font-family: "Nutricare Pro Bold", sans-serif;
     margin-bottom: 16px;
-    line-height: 1.55em;
+    line-height: 1.5em;
 }
 
 a{
@@ -62,6 +63,90 @@ section{
     position: relative;
 }
 
+.padding__ss{
+    padding: 80px 0;
+}
+
+.hero__section{
+    padding: 120px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-overflow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.heading-box{
+    position: relative;
+    max-width: 840px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    z-index: 2;
+}
+
+.heading{
+    font-size: 32px;
+    color: #034ea2;
+    font-family: "Nutricare Pro Bold";
+    font-weight: 800;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.description{
+    line-height: 1.5;
+    font-size: 16px;
+    color: #5e5e5e;
+    word-spacing: 4px;
+    font-weight: 400;
+}
+
+.breadcrumbs-box{
+    position: relative;
+    max-width: 840px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    z-index: 2;
+}
+
+.breadcrumbs-title{
+    font-size: 40px;
+    color: #FFFFFF;
+    font-family: "Nutricare Pro Bold";
+    font-weight: 800;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-align: center;
+} 
+
+.breadcrumbs{
+    font-size: 20px;
+    color: #FFFFFF;
+    font-family: "Nutricare Pro Bold";
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.bg-green-1{
+    background-color: #acd373;
+}
+
+.bg-green-2{
+    background-color: #8dc63f;
+}
+
 .container{
     max-width: 1200px;
     width: 100%;
@@ -82,6 +167,64 @@ section{
 .flex-item{
     width: calc(25% - 20px);
     margin: 15px 10px;
+}
+
+.page-default{
+    background: #F3F3F3;
+}
+
+ul{
+    padding-left: 0;
+}
+ol {
+    padding-left: 30px;
+}
+
+.footer ul{
+    padding: 0;
+}
+
+.page-default-content {
+    margin-top: 30px;
+}
+
+.categories {
+    margin-top: 30px;
+}
+
+.categories li {
+    margin-bottom: 5px;
+}
+
+.categories h4 {
+    font-size: 20px;
+    line-height: 1.3em;
+    font-weight: 600;
+}
+
+.categories a {
+    font-size: 16px;
+    color: #333333;
+    font-weight: 500;
+    font-family: var(--font-family);
+    line-height: 1;
+}
+
+.single-address {
+    margin-top: 30px;
+    font-size: 16px;
+    color: #333333;
+}
+
+.detail{
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 8px;
+    background: #FFFFFF;
+}
+
+.page-default-content figure{
+    text-align: center;
 }
 
 /* Swiper default */
@@ -120,43 +263,7 @@ section{
     opacity: 1;
 }
 
-.padding__ss{
-    padding: 80px 0;
-}
 
-.heading-box{
-    max-width: 840px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-
-.heading{
-    font-size: 32px;
-    color: #034ea2;
-    font-family: "Nutricare Pro Bold";
-    font-weight: 800;
-    line-height: 1.5;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.description{
-    line-height: 1.5;
-    font-size: 16px;
-    color: #5e5e5e;
-    word-spacing: 4px;
-    font-weight: 400;
-}
-
-.bg-green-1{
-    background-color: #acd373;
-}
-
-.bg-green-2{
-    background-color: #8dc63f;
-}
 
 
 @media screen and (max-width: 1024.98px){
@@ -164,10 +271,17 @@ section{
         padding: 60px 0;
     }
 
+    .hero__section{
+        padding: 100px 0;
+    }
+
     .flex-item{
         width: calc(50% - 20px);
     }
 
+    .detail{
+        padding: 30px 20px;
+    }
 }
 
 @media screen and (max-width: 767.98px){
@@ -176,12 +290,24 @@ section{
         padding: 50px 0;
     }
 
+    .hero__section{
+        padding: 80px 0;
+    }
+
+    .breadcrumbs-title{
+        font-size: 32px;
+    }
+
     .heading{
         font-size: 30px;
     }
 
     .description{
         font-size: 14px;
+    }
+
+    .detail{
+        padding: 25px 15px;
     }
 
 }

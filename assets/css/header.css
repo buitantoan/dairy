@@ -40,6 +40,7 @@
 }
 
 body ul.nav{
+    list-style: none;
     padding-left: 0;
 }
 
@@ -47,7 +48,6 @@ body ul.nav{
     position: relative;
     display: block;
 }
-
 .nav li a{
     position: relative;
     display: inline-block;

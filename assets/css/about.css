@@ -1,0 +1,25 @@
+.hero__section{
+    background-image: url(../images/image_2022_08_24T14_18_37_108Z.png);
+}
+.about__section{
+    background: #FFFFFF ;
+}
+
+.about__section{
+    padding: 100px 0;
+}
+
+.about-wrapper p{
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+@media(max-width: 1024.98px) {
+    .about__section{
+        padding: 80px 0;
+    }
+
+    .about-wrapper p{
+        font-size: 16px;
+    }
+}

@@ -173,16 +173,6 @@
     z-index: 10;
 }
 
-/* About us */
-
-.about__section{
-    background: #FFFFFF ;
-}
-
-.about-wrapper{
-    padding-top: 30px;
-}
-
 .image-box-wrapper{
     display: inline-block;
     position: relative;

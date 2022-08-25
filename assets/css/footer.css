@@ -10,6 +10,10 @@
     margin-bottom: 12px;
 }
 
+.footer-top .site-logo img{
+    width: 200px;
+}
+
 .widget-heading{
     font-size: 16px;
     color: #d77d31;
