@@ -13,7 +13,7 @@ body{
 }
 
 body{
-    font-family: "Nutricare Pro Bold", sans-serif;
+    font-family: var(--font-family);
     font-size: 14px;
     font-weight: 400;
 }
@@ -36,7 +36,7 @@ figure{
 
 h1,h2,h3,h4,h5,h6{
     color: #4a5157;
-    font-family: "Nutricare Pro Bold", sans-serif;
+    font-family: var(--font-family);
     margin-bottom: 16px;
     line-height: 1.55em;
 }
@@ -44,13 +44,13 @@ h1,h2,h3,h4,h5,h6{
 p{
     font-size: 16px;
     color: #5e5e5e;
-    font-family: "Nutricare Pro Bold", sans-serif;
+    font-family: var(--font-family);
     margin-bottom: 16px;
     line-height: 1.5em;
 }
 
 a{
-    font-family: "Nutricare Pro Bold", sans-serif;
+    font-family: var(--font-family);
     text-decoration: none;
     color: inherit;
     font-size: inherit;
@@ -66,6 +66,16 @@ img{
     height: auto;
 }
 
+ul,ol{
+    padding-left: 30px;
+}
+ul li,
+ol li{
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: var(--font-family);
+}
+
 section{
     position: relative;
 }
@@ -79,6 +89,8 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-image: url(../images/image_2022_08_24T14_18_37_108Z.png);
+
 }
 
 .bg-overflow{
@@ -99,10 +111,26 @@ section{
     z-index: 2;
 }
 
+.btn-back-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 20px;
+    line-height: 1;
+    padding: 5px 6px;
+    color: #FFFFFF;
+    background: #d77d31;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 99;
+    transition: 0.3s ease-outs;
+}
+
 .heading{
     font-size: 32px;
     color: #034ea2;
-    font-family: "Nutricare Pro Bold";
+    font-family: var(--font-family);
     font-weight: 800;
     line-height: 1.5;
     text-transform: uppercase;
@@ -126,7 +154,7 @@ section{
 .breadcrumbs-title{
     font-size: 40px;
     color: #FFFFFF;
-    font-family: "Nutricare Pro Bold";
+    font-family: var(--font-family);
     font-weight: 800;
     line-height: 1.5;
     text-transform: uppercase;
@@ -136,7 +164,7 @@ section{
 .breadcrumbs{
     font-size: 20px;
     color: #FFFFFF;
-    font-family: "Nutricare Pro Bold";
+    font-family: var(--font-family);
     font-weight: 600;
     line-height: 1.5;
     text-transform: capitalize;
@@ -166,13 +194,6 @@ section{
 
 .page-default{
     background: #F3F3F3;
-}
-
-ul{
-    padding-left: 0;
-}
-ol {
-    padding-left: 30px;
 }
 
 .footer ul{

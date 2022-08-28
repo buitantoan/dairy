@@ -5,6 +5,21 @@
     }
 
     $(document).ready(function () {
+
+        $(window).scroll(function(){
+
+            let showAfter = 100;
+            if ( $(this).scrollTop() > showAfter ) { 
+                $('.btn-back-to-top').fadeIn();
+            } else { 
+                $('.btn-back-to-top').fadeOut();
+            }
+        });
+
+        $('#backToTop').click(function(){
+            $('html, body').animate({scrollTop : 0},800);
+            return false;
+        });
         
         var swiper_hero = $('.d-hero-swiper'); 
         var swiper_herro_data = {
@@ -36,26 +51,10 @@
         });
 
         $('#menu-mobile .menu-item-has-children').on('click', '.dropdown-toggle .menu-icon',function (e) {
+            e.preventDefault();  
             $(this).parent().toggleClass('icon-up');
             $(this).parent().next('.dropdown-menu').slideToggle('swing');
         });
-
-
-        // $(".nav .menu-item").on('click', function(event) {
-
-        //     if (this.hash !== "") {
-        //         event.preventDefault();
-        //         var hash = this.hash;
-        //         var headerHeight = $('.header').outerHeight();
-                
-        //         if($(hash).length){
-        //             $('html, body').animate({
-        //                 scrollTop: parseInt($(hash).offset().top) - headerHeight
-        //             }, 600);
-        //         }
- 
-        //     }
-        // });
 
     });
 
