@@ -1,12 +1,13 @@
 ( function( $ ) {
 
+    "use strict";
+
     function swiper_slider_func(element, swiper_option) {
         let swiper = new Swiper(element, swiper_option);
     }
 
     $(document).ready(function () {
 
-        console.log(window.location.hash);
         var hash_link = window.location.hash;
         if(hash_link){
             let header = $('.header').outerHeight();
@@ -23,8 +24,6 @@
             });
 
         }
-
-
 
         $(window).scroll(function(){
 
