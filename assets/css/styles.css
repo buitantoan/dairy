@@ -325,6 +325,11 @@ section{
         padding: 60px 0;
     }
 
+    .wrapper{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
     .breadcrumbs-title{
         font-size: 32px;
     }
