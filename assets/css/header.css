@@ -183,8 +183,10 @@ body ul.nav{
 
 .menu-mobile__main .dropdown-toggle .menu-icon{
     width: 30px;
-    height: auto;
-    text-align: center;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon-up .menu-icon{
