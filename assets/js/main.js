@@ -6,6 +6,15 @@
 
     $(document).ready(function () {
 
+        console.log(window.location.hash);
+        var hash_link = window.location.hash;
+        if(hash_link){
+            let header = $('.header').outerHeight();
+            $('html, body').animate({
+                scrollTop: $(hash_link).offset().top - header
+            }, 1000);
+        }
+
         $(window).scroll(function(){
 
             let showAfter = 100;
