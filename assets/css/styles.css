@@ -216,6 +216,7 @@ section{
     margin-bottom: 20px;
 }
 .categories .list-category{
+    padding-left: 0;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
