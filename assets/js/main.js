@@ -13,7 +13,18 @@
             $('html, body').animate({
                 scrollTop: $(hash_link).offset().top - header
             }, 1000);
+
+            $("nav").find("a").click(function(e) {
+
+                $("html, body").animate({
+                    scrollTop: $(hash_link).offset().top - header
+                },1000);
+                
+            });
+
         }
+
+
 
         $(window).scroll(function(){
 
@@ -25,16 +36,6 @@
             }
         });
        
-        // $("nav").find("a").click(function(e) {
-        //     e.preventDefault();
-        //     let section = $(this).attr("href");
-        //     if (section) {
-        //         $("html, body").animate({
-        //             scrollTop: $(section).offset().top
-        //         });
-        //     }
-            
-        // });
 
         $('#backToTop').click(function(){
             $('html, body').animate({scrollTop : 0},800);
