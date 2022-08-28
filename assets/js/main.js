@@ -15,17 +15,17 @@
                 $('.btn-back-to-top').fadeOut();
             }
         });
-
-        $("nav").find("a").click(function(e) {
-            e.preventDefault();
-            let section = $(this).attr("href");
-            if (section) {
-                $("html, body").animate({
-                    scrollTop: $(section).offset().top
-                });
-            }
+       
+        // $("nav").find("a").click(function(e) {
+        //     e.preventDefault();
+        //     let section = $(this).attr("href");
+        //     if (section) {
+        //         $("html, body").animate({
+        //             scrollTop: $(section).offset().top
+        //         });
+        //     }
             
-        });
+        // });
 
         $('#backToTop').click(function(){
             $('html, body').animate({scrollTop : 0},800);
