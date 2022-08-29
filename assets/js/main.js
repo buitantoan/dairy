@@ -3,7 +3,7 @@
     "use strict";
 
     function swiper_slider_func(element, swiper_option) {
-        let swiper = new Swiper(element, swiper_option);
+        return new Swiper(element, swiper_option); 
     }
 
     $(document).ready(function () {
@@ -35,14 +35,24 @@
             }
         });
        
-
         $('#backToTop').click(function(){
             $('html, body').animate({scrollTop : 0},800);
             return false;
         });
+
+        $('.button-menu-toggle').on('click', function (e) {
+            $(this).toggleClass('icon-expanded'); 
+            $('#menu-mobile').toggleClass('nav-expanded'); 
+         });
+ 
+        $('#menu-mobile .menu-item-has-children').on('click', '.dropdown-toggle .menu-icon',function (e) {
+             e.preventDefault();  
+             $(this).parent().toggleClass('icon-up');
+             $(this).parent().next('.dropdown-menu').slideToggle('swing');
+        });
         
-        var swiper_hero = $('.d-hero-swiper'); 
-        var swiper_herro_data = {
+        var swiper_hero_el = $('.d-hero-swiper'); 
+        var swiper_herro_option = {
             spaceBetween: 0,
             slidesPerView: 1,
             centeredSlides: true,
@@ -62,19 +72,36 @@
             },
         };
 
-        swiper_slider_func(swiper_hero, swiper_herro_data);
+        swiper_slider_func(swiper_hero_el, swiper_herro_option);
 
+        
+        var product_gallery_el = $('.product-gallery'); 
+        var product_gallery_option = {
+            loop: true,
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+        };
 
-        $('.button-menu-toggle').on('click', function (e) {
-           $(this).toggleClass('icon-expanded'); 
-           $('#menu-mobile').toggleClass('nav-expanded'); 
-        });
+        var product_gallery = swiper_slider_func(product_gallery_el, product_gallery_option);
 
-        $('#menu-mobile .menu-item-has-children').on('click', '.dropdown-toggle .menu-icon',function (e) {
-            e.preventDefault();  
-            $(this).parent().toggleClass('icon-up');
-            $(this).parent().next('.dropdown-menu').slideToggle('swing');
-        });
+        var product_thumbs_el = $('.product-thumbs'); 
+        var product_thumbs_option = {
+            loop: true,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next-product",
+                prevEl: ".swiper-button-prev-product",
+            },
+            thumbs: {
+                swiper: product_gallery
+            }
+        };
+
+        swiper_slider_func(product_thumbs_el, product_thumbs_option);
+
 
     });
 

@@ -56,7 +56,7 @@ body ul.nav{
     font-size: 14px;
     line-height: 24px;
     color: #685e59;
-    font-family: "Open Sans";
+    font-family: var(--font-family);
     text-transform: capitalize;
     transition: all 0.3s;
 }

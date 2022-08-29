@@ -1,6 +1,7 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;900&family=Poppins:wght@300;400;500;600;700&family=Roboto+Serif:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900&display=swap');
 :root{
-    --font-family: "Nutricare Pro Bold", sans-serif;
+    --font-family: 'Poppins', sans-serif;;
 }
 
 
@@ -38,7 +39,7 @@ h1,h2,h3,h4,h5,h6{
     color: #4a5157;
     font-family: var(--font-family);
     margin-bottom: 16px;
-    line-height: 1.55em;
+    line-height: 1.5;
 }
 
 p{
@@ -46,7 +47,7 @@ p{
     color: #5e5e5e;
     font-family: var(--font-family);
     margin-bottom: 16px;
-    line-height: 1.5em;
+    line-height: 1.5;
 }
 
 a{
@@ -131,7 +132,7 @@ section{
     font-size: 32px;
     color: #034ea2;
     font-family: var(--font-family);
-    font-weight: 800;
+    font-weight: 700;
     line-height: 1.5;
     text-transform: uppercase;
     text-align: center;
@@ -155,7 +156,7 @@ section{
     font-size: 40px;
     color: #FFFFFF;
     font-family: var(--font-family);
-    font-weight: 800;
+    font-weight: 700;
     line-height: 1.5;
     text-transform: uppercase;
     text-align: center;
@@ -200,10 +201,6 @@ section{
     padding: 0;
 }
 
-.content {
-    margin-top: 30px;
-}
-
 .categories {
     margin-bottom: 30px;
     text-align: center;
@@ -243,6 +240,13 @@ section{
     background-color: #034ea2;
 }
 
+.content {
+    max-width: 1000px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .featured-image{
     text-align: center;
 }
@@ -259,6 +263,42 @@ section{
 }
 
 /* Swiper default */
+.product-images .product-thumbs{
+    max-width: 650px;
+    height: auto;
+    margin: 0 auto;
+}
+.product-thumbs .swiper-slide{
+    line-height: 0;
+}
+.product-thumbs .swiper-slide img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.product-images .product-gallery{
+    max-width: 650px;
+    height: 150px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.product-gallery .swiper-slide {
+    height: 100%;
+    opacity: 0.7;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.product-gallery .swiper-slide-thumb-active {
+    opacity: 1;
+    filter: initial;
+}
+.product-gallery img {
+    cursor: pointer;
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+}
 
 .swiper .swiper-button-next::after,
 .swiper .swiper-button-prev::after{
@@ -346,11 +386,26 @@ section{
         padding: 25px 15px;
     }
 
+    .product-images .product-gallery{
+        height: 130px;
+    }
+
 }
 
 @media screen and (max-width: 480px){
     .flex-item{
         width: 100%;
+    }
+
+    .product-images .product-gallery{
+        height: 90px;
+    }
+}
+
+@media screen and (max-width: 360px){
+
+    .product-images .product-gallery{
+        height: 70px;
     }
 }
 
