@@ -220,6 +220,8 @@ section{
     justify-content: center;
 }
 
+
+
 .categories .list-category .category-item {
     margin: 5px;
 }
@@ -237,6 +239,10 @@ section{
     transition: all 0.3s;
 }
 .list-category .category-item a:hover{
+    background-color: #034ea2;
+}
+
+.list-category .active a{
     background-color: #034ea2;
 }
 
